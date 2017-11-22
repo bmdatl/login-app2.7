@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/static/main.css" type="text/css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+
+<div class="login-page">
+  <div class="form">
+
+      {% if error %}
+      {{error}}
+      {% endif %}
+
+      <h2>Register</h2>
+    <form class="register-form" method="post" action="/create">
+        <input type="text" placeholder="name" name="name"/>
+        <input type="text" placeholder="email address" name="username"/>
+        <input type="password" placeholder="password" name="password"/>
+      <button type="submit">create</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
